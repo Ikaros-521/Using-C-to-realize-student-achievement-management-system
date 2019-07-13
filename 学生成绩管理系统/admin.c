@@ -41,7 +41,7 @@ static void admin_add_tea(void)
 			pf("pos已定位\n");
 			pos = i;
 		}
-		if(strcmp(TEA[i].id,Cteacher_id)==1)
+		if(strcmp(TEA[i].id,Cteacher_id)==0)
 		{
 			pf("工号重复，请重新输入！\n");
 			break;
