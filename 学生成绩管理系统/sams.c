@@ -71,7 +71,7 @@ void sams_exit(void)
 	FILE* afwp = fopen("admin.txt","w");	
 	int num = 0;
 	num = fprintf(afwp,"%s %s %hd",ADM[0].id,ADM[0].passwd,ADM[0].birth);
-    fclose(afwp);
+	fclose(afwp);
 
 	FILE* sfwp = fopen("stu.txt","w");
 	for(int i=0; i<100; i++)
@@ -82,7 +82,7 @@ void sams_exit(void)
 			num = fprintf(sfwp,"%s %c %s %s %hd %hd %hd %hd %hd %hd\n",STU[i].name,STU[i].sex,STU[i].id,STU[i].passwd,STU[i].chinese,STU[i].english,STU[i].math,STU[i].time,STU[i].birth,STU[i].exist);
 		}
 	}
-    fclose(sfwp);
+	fclose(sfwp);
 
 	FILE* tfwp = fopen("tea.txt","w");
 	for(int i=0; i<50; i++)
@@ -93,7 +93,7 @@ void sams_exit(void)
 			num = fprintf(tfwp,"%s %c %s %s %hd %hd %hd\n",TEA[i].name,TEA[i].sex,TEA[i].id,TEA[i].passwd,TEA[i].time,TEA[i].birth,TEA[i].exist);
 		}	
 	}
-    fclose(tfwp);
+	fclose(tfwp);
 	// 释放内存、保存数据
 	free(STU);
 	free(TEA);
