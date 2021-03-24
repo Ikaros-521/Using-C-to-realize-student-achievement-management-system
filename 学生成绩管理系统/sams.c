@@ -31,7 +31,7 @@ void sams_init(void)
 	fclose(afrp);
 
 	FILE* sfrp = fopen("stu.txt","r");
-	for(i=0; i<100; i++)
+	for(int i=0; i<100; i++)
 	{
 		int num = 0;
 		num = fscanf(sfrp,"%s %c %s %s %hd %hd %hd %hd %hd %hd",STU[i].name,&STU[i].sex,STU[i].id,STU[i].passwd,&STU[i].chinese,&STU[i].english,&STU[i].math,&STU[i].time,&STU[i].birth,&STU[i].exist);
@@ -39,7 +39,7 @@ void sams_init(void)
 	fclose(sfrp);
 
 	FILE* tfrp = fopen("tea.txt","r");
-	for(i=0; i<50; i++)
+	for(int i=0; i<50; i++)
 	{
 		int num = 0;
 		num = fscanf(tfrp,"%s %c %s %s %hd %hd %hd",TEA[i].name,&TEA[i].sex,TEA[i].id,TEA[i].passwd,&TEA[i].time,&TEA[i].birth,&TEA[i].exist);
